@@ -307,9 +307,11 @@ Automatically varying the number of notes in symbolic music has various applicat
             The spatial stream is a tabula rasa fully-convolutional network that encodes RGB-D input. 
           </p>
         </div>
-        <img src="media/images/model.png" class="interpolation-image" 
-         alt="Interpolate start reference image." />
-        <br/>
+        <center> 
+          <img srcset="media/images/model.png" width="75%"
+          alt="Interpolate start reference image." /> 
+        </center>
+               <br/>
         <br/>
             <b>Paradigm 1:</b> Unlike existing object detectors, CLIP is not limited to a predefined set of object classes. And unlike other vision-language models, it's not restricted by a top-down pipeline that detects objects with bounding boxes or instance segmentations. This allows us to forgo the traditional paradigm of training explicit detectors for cloths, pliers, chessboard squares, cherry stems, and other arbitrary things. 
         <br/>
@@ -351,48 +353,23 @@ Automatically varying the number of notes in symbolic music has various applicat
 
         <!--/ Re-rendering. -->
 
-        <h2 class="title is-3">Results</h2>
+        <h2 class="title is-3">Survey Results</h2>
 
-        <div class="columns">
-          
-          <div class="column has-text-centered">
-            <h3 class="title is-5">Music Similarity with Kullback-Leibler Divergence</h3>
-            <img src="media/images/pdf.png" class="interpolation-image" 
-            alt="Interpolate start reference image."/>
-          </div>
+        
+<style>.container {
+  width: 80%;
+  margin: 15px auto;
+}</style>
+<!-- partial:index.partial.html -->
+<div class="container">
+<h2>Chart.js — Bar Chart Demo</h2>
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js'></script><script  src="./script.js"></script>
 
-          <div class="column has-text-centered">
-            <h3 class="title is-5">Symbolic Chord Prediction Accuracy vs Number of Notes</h3>
-            <img src="media/images/scp.png" class="interpolation-image" 
-            alt="Interpolate start reference image."/>
-          </div>
-
-          </div>
-        </div>
-        </br>
-
-        <h3 class="title is-4">Survey Results</h3>
-        <div class="content has-text-justified">
-          <p>
-            Examples of pick and place affordance predictions from multi-task <span class="dcliport">CLIPort</span> models:
-          </p>
-        </div>
-        <br/>
-        <center>
-          <img src="media/images/table2.png" class="interpolation-image" 
-          alt="Interpolate start reference image."/> 
-        </center>
-               <br/>
-        <br/>
-        <center>
-          <img src="media/images/table1.png" class="interpolation-image" 
-          alt="Interpolate start reference image."/> 
-        </center>
-
-      </div>
-    </div>
-
-  </div>
 </section>
 
 
@@ -407,6 +384,7 @@ Automatically varying the number of notes in symbolic music has various applicat
 }</code></pre>
   </div>
 </section>
+
 
 
 <footer class="footer">
