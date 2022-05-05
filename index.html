@@ -300,11 +300,10 @@ Automatically varying the number of notes in symbolic music has various applicat
         <h3 class="title is-4">Architecture</h3>
         <div class="content has-text-justified">
           <p>
-            Broadly inspired by (or vaguely analogous to) the <a target=”_blank” href="https://en.wikipedia.org/wiki/Two-streams_hypothesis">two-stream hypothesis in cognitive psychology</a>, we present a two-stream architecture 
-            for vision-based manipulation with semantic and spatial pathways. The semantic stream uses a pre-trained CLIP model  
-            to encode RGB and language-goal input. Since CLIP is trained with large amounts of image-caption pairs from the internet,
-            it acts as a powerful semantic prior for <a target="_blank" href="https://distill.pub/2021/multimodal-neurons/">grounding visual concepts</a> like colors, shapes, parts, texts, and object categories. 
-            The spatial stream is a tabula rasa fully-convolutional network that encodes RGB-D input. 
+            The problem is to conditionally generate music based on <b>r</b>. A straightforward approach is to first apply
+            representation learning on the music and then reconstruct it conditioned on <b>r</b>, similar to autoencoder style models in machine learning. In this section, we introduce a novel
+            autoencoder, named VaryCharm. Specifically, VaryCharm consists of two parts. The first is a pitch autoencoder where the encoder compresses a piece of music into a latent representation and the decoder
+            reconstructs music from the latent representation. The second is a threshold mask that controls the sparsity in the output music. To train the weights of the pitch autoencoder we define a novel divergence in. This divergence is a combination of error on reconstruction and error on symbolic chord predictions.
           </p>
         </div>
         <center> 
@@ -313,7 +312,7 @@ Automatically varying the number of notes in symbolic music has various applicat
         </center>
                <br/>
         <br/>
-            <b>Figure 1:</b> During training VaryCharm combines MSE loss and softmax cross entropy loss. Note the mask requires an output-input ratio r. During training we can fix r; or train without masking, and apply the mask during inference. During inference, r controls the number of notes.
+            <b>Figure 1:</b> During training VaryCharm combines MSE loss and softmax cross entropy loss. Note the mask requires an output-input ratio <b>r</b>. During training we can fix <b>r</b>; or train without masking, and apply the mask during inference. During inference, <b>r</b> controls the number of notes.
         <br/>
         <br/>
         <br/>
