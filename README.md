@@ -3,11 +3,11 @@
 
 If you find VaryCharm useful for your work please cite:
 ```
-@article{shridhar2021cliport
-  author    = {Shridhar, Mohit and Manuelli, Lucas and Fox, Dieter},
-  title     = {CLIPort: What and Where Pathways for Robotic Manipulation},
-  journal   = {arXiv preprint arXiv:??},
-  year      = {2021},
+@article{varycahrm2022
+  author    = {Anonymous1, Anonymous2, and Anonymous3},
+  title     = {VaryCHarm: A Method to Automatically Vary the Complexity of Harmonies in Music},
+  journal   = {???},
+  year      = {2022},
 }
 ```
 
